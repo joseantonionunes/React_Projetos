@@ -1,4 +1,4 @@
-import { Section } from "./container"
+import { Section } from './container'
 import { Div } from './container'
 import { Main } from "./container"
 import { FiSearch } from 'react-icons/fi'
