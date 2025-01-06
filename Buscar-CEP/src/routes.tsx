@@ -1,17 +1,17 @@
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Header from './Header'
-import Container from './Container'
+import Header from './Header';
+import Container from './container';
 
-const Routes = () => {
-    return(
+const AppRoutes = () => {
+    return (
         <BrowserRouter>
             <Header />
-            <Switch>  
-                <Route exact path='/' component={Container} />
-            </Switch>
+            <Routes>
+                <Route path="/" element={<Container />} />
+            </Routes>
         </BrowserRouter>
-    )
-}
+    );
+};
 
-export default Routes;
+export default AppRoutes;
